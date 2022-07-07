@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title> Nagwa task </title>
+        <meta charset="UTF-8">
+        <meta name = "description" content="Nagwa task">
+        <meta name = "kaywords" content="Nagwa task">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta anme="author" content="AHMED RASHED" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <!-- ready -->
+        <div id="ready">
+            <h4 class="mb-4">Welcome to our Home..</h4>
+            <h1>Thank you for using Nagwa Education Platform <i class="fa fa-spinner fa-spin"></i></h1>            
+        </div>
+
+        <!-- header section -->
+        <header id="header">
+            <div class="container">
+                <div class="head py-3">
+                    <div class="row gx-0">
+                        <div class="col-6">
+                            <div class="logo text-start">
+                                <img class="me-1" src="imgs/logo.jpg" alt="logo school">
+                                Step to success school
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="icons-head d-flex justify-content-end align-items-center h-100">
+                                <i class="fa-regular fa-bell"></i>
+                                <i class="fa-regular fa-user"></i>
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </header>
+
+        <!-- user section -->
+        <section id="user" class="bg-white">
+            <div class="container">
+                <div class="users py-4">
+                    <div class="row gx-0 gy-4 flex-wrap-reverse">
+                        <div class="col-md-6">
+                            <div class="img-users text-start">
+                                <img class="me-1" src="imgs/adam.jpg" alt="Adam Photo">
+                                Adam
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex justify-content-between ctr align-items-center flex-wrap-reverse">
+                            <div class="user">
+                                <img class="me-1" src="imgs/maged.jpg" alt="Maged Photo">
+                                Maged
+                            </div>
+                            <div class="user adam ms-2">
+                                <img class="me-1" src="imgs/adam.jpg" alt="Adam Photo">
+                                Adam
+                            </div>
+                            <div class="user ms-2">
+                                <img class="me-1" src="imgs/mona.jpg" alt="Mona Photo">
+                                Mona
+                            </div>
+                            <div class="add-user ms-2">
+                                <i class="fa-solid fa-user-plus me-2"></i>
+                                Add Child
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- statistics section -->
+        <section id="statistics" class="pt-5">
+            <div class="container">
+                <div class="before mb-3">
+                    <h5 class="ms-3">Statistics</h5>
+                </div>
+                <div class="data p-4">
+                    <div class="row gy-3">
+                        <div class="col-md-4">
+                            <div class="skill w-75 mx-auto p-2 text-center">
+                                <div class="degree degree1">
+                                    <p class="m-0">80<span class="m-0">%</span></p>
+                                    <div class="dot dot1"></div>
+                                </div>
+                                <div class="title">
+                                    <h6 class="mt-2 mb-0 fw-bold">32 out of 40</h6>
+                                    <p class="m-0">Solved Homework</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="skill w-75 mx-auto p-2 text-center">
+                                <div class="degree degree2">
+                                    <p class="m-0">50<span class="m-0">%</span></p>
+                                    <div class="dot dot2"></div>
+                                </div>
+                                <div class="title">
+                                    <h6 class="mt-2 mb-0 fw-bold">45 out of 90</h6>
+                                    <p class="m-0">Attended Days</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="skill w-75 mx-auto p-2 text-center">
+                                <div class="degree degree3">
+                                    <p class="m-0">73<span class="m-0">%</span></p>
+                                    <div class="dot dot3"></div>
+                                </div>
+                                <div class="title">
+                                    <h6 class="mt-2 mb-0 fw-bold">8 out of 11</h6>
+                                    <p class="m-0">Online Sessions attended</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- homework section -->
+        <section id="homework" class="pt-5">
+            <div class="container">
+                <div class="before d-flex justify-content-between align-items-center mb-2">
+                    <h5 class="ms-3 mb-0">Homework</h5>
+                    <div class="all-homes bg-white border-0">
+                        All Homeworks <i class="fa-solid fa-eye ms-2"></i>
+                    </div>
+                </div>
+                <div class="data p-4">
+                    <div class="subject d-flex justify-content-between align-items-center px-3 mb-3">
+                        <div class="average d-flex justify-content-start align-items-center text-muted">
+                            <div class="child me-2">
+                                <span id="adam" class="ms-2"></span>
+                            </div>
+                            <div class="avg">
+                                <span id="avg" class="ms-2"></span>
+                            </div>
+                        </div>
+                        <div class="chemistry">
+                            <h6 class="fw-bold">Chemistry</h6>
+                            <i class="fa-solid fa-circle-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="mt-1 px-3" style="height: 250px;">
+                        <canvas id="myChart" class="my-charts">
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- attendence section -->
+        <section id="attendence" class="pt-5">
+            <div class="container">
+                <div class="before d-flex justify-content-between align-items-center mb-2">
+                    <h5 class="ms-3 mb-0">Attendence</h5>
+                    <div class="history d-flex justify-content-end align-items-center">
+                        <i class="fa-solid fa-chevron-left me-2"></i>
+                        <span>March<strong> . </strong>2020</span>
+                        <i class="fa-solid fa-chevron-right ms-2"></i>
+                    </div>
+                </div>
+                <div class="data p-4 text-center">
+                    <div class="days d-flex justify-content-center align-items-center">
+                    </div>
+                    <div id="row" class="row">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- gradebook section -->
+        <section id="gradebook" class="py-5">
+            <div class="container">
+                <div class="row g-1">
+                    <div class="col-md-3">
+                        <div class="before d-flex justify-content-start align-items-center mb-3">
+                            <h5 class="ms-3 mb-0">Gradebook</h5>
+                        </div>
+                        <div class="data px-3">
+                            <ul class="list-unstyled text-start px-1">
+                                <li class="fw-bold">Math</li>
+                                <li class="fw-bold">Geology</li>
+                                <li class="fw-bold">Sociology</li>
+                                <li class="fw-bold">Chemistry</li>
+                                <li class="fw-bold">Statics</li>
+                                <li class="fw-bold">Science</li>
+                                <li class="last fw-bold">Arabic</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-9 text-center mt-spi">
+                        <div class="row gy-3 gx-1">
+                            <div class="col-6 col-md-3">
+                                <p class="mb-3">1<small>st</small> Semester</p>
+                                <div class="data px-3">
+                                    <ul class="list-unstyled px-1">
+                                        <li>42/50</li>
+                                        <li>80/100</li>
+                                        <li>50/50</li>
+                                        <li>98/100</li>
+                                        <li><span class="text-danger">30</span>/100</li>
+                                        <li><span class="text-danger">20</span>/50</li>
+                                        <li class="last">80/100</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <p class="mb-3">2<small>st</small> Semester</p>
+                                <div class="data px-3">
+                                    <ul class="list-unstyled px-1">
+                                        <li>40/50</li>
+                                        <li>92/100</li>
+                                        <li>43/50</li>
+                                        <li>99/100</li>
+                                        <li>72/100</li>
+                                        <li><span class="text-danger">19</span>/50</li>
+                                        <li class="last">92/100</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <p class="mb-3">Year Pass Limit</p>
+                                <div class="data px-3">
+                                    <ul class="list-unstyled px-1">
+                                        <li>50</li>
+                                        <li>100</li>
+                                        <li>50</li>
+                                        <li>100</li>
+                                        <li>100</li>
+                                        <li>50</li>
+                                        <li class="last">100</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <p class="mb-3">Total Marks</p>
+                                <div class="data px-3">
+                                    <ul class="list-unstyled px-1">
+                                        <li>82/100</li>
+                                        <li>172/200</li>
+                                        <li>93/100</li>
+                                        <li>197/200</li>
+                                        <li>102/200</li>
+                                        <li><span class="text-danger">39</span>/100</li>
+                                        <li class="last">172/200</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="data d-flex justify-content-between align-items-center p-3">
+                            <div class="total-mark fw-bold">Total Mark</div>
+                            <div class="marks me-5"><span class="fw-bold">3785</span><span style="color: #AFAFAF;"> / 4000</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="py-3 bg-white">
+            <div class="container">
+                <div class="row g-2">
+                    <div class="col-4 img-footer d-flex justify-content-start align-items-center ps-2">
+                        <img src="imgs/Nagwa logo.png" alt="Nagwa logo">
+                    </div>
+                    <div class="col-8 copyright d-flex justify-content-end align-items-center">
+                        <p class="mb-0">Copyright &copy; <span class="year"></span> Nagwa All Rights Reserved</p> 
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- js files -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

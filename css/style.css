@@ -1,0 +1,315 @@
+
+:root{
+    --mainColor:#f5f5f5;
+}
+
+#ready{
+    text-align: center;
+    z-index: 999;
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    font-weight: bold;
+    background-color: #000;
+}
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+    background-color: var(--mainColor);
+    overflow: hidden;
+}
+
+i{
+    cursor: pointer;
+}
+
+
+/* header  */
+
+.logo{
+    font-size: 13px;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+}
+.icons-head i{
+    width: 40px;
+    height: 40px;
+    color: #026bb0;
+    background-color: #fff;
+    border: 1px solid #EBEBEB;
+    border-radius: 10px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons-head .fa-bell{
+    position: relative;
+}
+.icons-head .fa-bell::after{
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    top: 25%;
+    right: 25%;
+    background-color: #ff3c3c;
+}
+
+
+/* section user */
+
+.img-users{
+    font-weight: bold;
+    font-size: 24px
+}
+.img-users img{
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+}
+.user{
+    padding: 6px 10px;
+    border: 1px solid #EBEBEB;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user img{
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+}
+.adam{
+    background-color: #026BB01A;
+    color: #026BB0;
+}
+.add-user{
+    padding: 6px 10px;
+    border: 1px solid #026BB0;
+    color: #026BB0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width:768px) and (max-width:992px){
+    .add-user{
+        margin-bottom: 10px;
+    }
+    .ctr{
+        justify-content: center !important;
+    }
+}
+
+
+/* section statistics */
+
+.before{
+    position: relative;
+}
+.before:before{
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #AE7129;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.before h5{
+    font-weight: bold;
+}
+.data{
+    border: 1px solid #EBEBEB;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.degree{
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.degree1{
+    border: 2px solid #4a3274;
+    color: #4a3274;
+}
+.degree2{
+    border: 2px solid #739500;
+    color: #739500;
+}
+.degree3{
+    border: 2px solid #950086;
+    color: #950086;
+}
+.degree span{
+    font-size: 12px;
+}
+.degree .dot{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+.degree .dot1{
+    border: 2px solid #4a3274;
+    top: 30%;
+    left: -3px;
+    transform: translateY(-50%);
+}
+.degree .dot2{
+    border: 2px solid #739500;
+    bottom: -1px;
+    left: 50%;
+    transform: translate(-50% , 50%);
+}
+.degree .dot3{
+    border: 2px solid #950086;
+    top: 60%;
+    left: -5px;
+    transform: translateY(-50%);
+}
+.skill .title h6{
+    font-size: 15px;
+}
+.skill .title p{
+    font-size: 14px;
+}
+
+
+/* section homework */
+
+.all-homes{
+    padding: 8px 10px;
+    color: #026BB0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subject .average span{
+    font-size: 12px;
+}
+.subject .chemistry h6{
+    font-size: 12px;
+    display: inline-block;
+}
+.subject .chemistry i{
+    font-size: 12px;
+}
+.child , .avg{
+    position: relative;
+}
+.child:before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 16px;
+    border-radius: 2px;
+    background-color: #0575B61A;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.avg:before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 16px;
+    border-radius: 2px;
+    background-color: #3333331A;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* attendence section */
+
+.history span{
+    color: #333333;
+}
+.history i{
+    font-size: 12px;
+    color: blue;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border: 1px solid #EBEBEB;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#attendence .data span{
+    width: 140px;
+    padding: 5px;
+    margin: 3px;
+}
+.days span{
+    font-size: 12px;
+    color: #8B8B8B;
+}
+.month span{
+    height: 60px;
+    background-color:#78B5171A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.empty{
+    color: transparent !important;
+    background-color: transparent !important;
+}
+.absence{
+    background-color: #E51D1D1A !important;
+}
+.holiday{
+    background-color: #3333331A !important;
+}
+
+
+/* gradebook section */
+.data ul li{
+    border-bottom: 1px solid #F1F0F0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 14px;
+}
+.last{
+    border-bottom: none !important;
+    padding-bottom: 10px !important;
+}
+@media screen and (max-width: 768px){
+    .mt-spi{
+        margin-top: 20px;
+    }
+}
+
+
+/* footer */
+footer img{
+    width: 50px;
+    height: 50px;
+}
+.copyright p{
+    font-size: 13px;
+    color: #707070;
+}
