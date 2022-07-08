@@ -93,7 +93,7 @@ i{
     color: #026BB0;
 }
 .add-user{
-    padding: 6px 10px;
+    padding: 8px 10px;
     border: 1px solid #026BB0;
     color: #026BB0;
     border-radius: 10px;
@@ -107,6 +107,12 @@ i{
     }
     .ctr{
         justify-content: center !important;
+    }
+}
+@media screen and (max-width: 495px) {
+    .add-user{
+        margin-bottom: 10px;
+        margin-left: 0 !important;
     }
 }
 
@@ -297,9 +303,37 @@ i{
     border-bottom: none !important;
     padding-bottom: 10px !important;
 }
+.totaly{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.marks{
+    margin-right: 3rem;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .marks{
+        margin-right: 2rem;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .totaly{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }.marks{
+        margin-right: 0;
+    }
+}
 @media screen and (max-width: 768px){
     .mt-spi{
         margin-top: 20px;
+    }.totaly{
+        justify-content: space-around;
+    }
+    .marks{
+        margin-right: 0;
     }
 }
 
